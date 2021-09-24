@@ -1,9 +1,7 @@
 pipeline {
     
     agent any
-    tools {
-        maven "maven-3.8.2"
-    }
+
     parameters{
         string(name:'OPERATION', defaultValue:'package', description: 'Operación maven a realizar')
         string(name:'REPO_URL', defaultValue:'https://github.com/jesuscle/junitmavenexample', description: 'Url del repositorio Git')        
